@@ -22,7 +22,7 @@
 
 #elif defined(__unix__) || defined(__unix)
  #include <unistd.h>
- #if defined(__linux__)
+ #if defined(__linux__) && !defined(__ESPERANTO__)
    #define OCAML_MTIME_LINUX
  #endif
  #if defined(_POSIX_VERSION)
